@@ -1,0 +1,2097 @@
+{
+  "Manque Alimentation 24 VDC": {
+    "description": "Manque Alimentation 24 VDC",
+    "type": "Alimentation Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Arrêt total du système de contrôle",
+      "Perte des signaux 24 VDC",
+      "Alarme générale déclenchée"
+    ],
+    "actions": [
+      "Vérifier le transformateur 24 VDC",
+      "Contrôler les fusibles du tableau",
+      "Mesurer la tension en sortie",
+      "Remplacer le fusible ou le transformateur défaillant"
+    ],
+    "preventives": [
+      "Tester mensuellement la tension 24 VDC",
+      "Vérifier les connexions trimestriellement",
+      "Constituer un stock de fusibles de rechange"
+    ]
+  },
+  "Manque Alimentation Brûleurs": {
+    "description": "Manque Alimentation Brûleurs",
+    "type": "Alimentation Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Extinction de tous les brûleurs",
+      "Perte de température dans le four",
+      "Alarme alimentation déclenchée"
+    ],
+    "actions": [
+      "Vérifier le disjoncteur dédié aux brûleurs",
+      "Contrôler les câbles d'alimentation",
+      "Mesurer la tension entrée/sortie tableau",
+      "Remplacer le composant défaillant"
+    ],
+    "preventives": [
+      "Inspection mensuelle des disjoncteurs",
+      "Vérification des câbles tous les 6 mois",
+      "Test annuel des protections électriques"
+    ]
+  },
+  "Manque Alimentation Modulantes": {
+    "description": "Manque Alimentation Modulantes",
+    "type": "Alimentation Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Perte de contrôle des vannes modulantes",
+      "Impossibilité de régler le débit gaz",
+      "Alarme de commande déclenchée"
+    ],
+    "actions": [
+      "Vérifier l'alimentation des cartes de commande",
+      "Contrôler la tension 24 VDC sur les modules",
+      "Tester chaque vanne modulante individuellement",
+      "Remplacer la carte ou le câble défaillant"
+    ],
+    "preventives": [
+      "Test trimestriel des vannes modulantes",
+      "Vérification des cartes électroniques tous les 6 mois",
+      "Nettoyage des connecteurs annuellement"
+    ]
+  },
+  "Alarme centrale combustible": {
+    "description": "Alarme centrale combustible",
+    "type": "Burner Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Pression gaz insuffisante ou absente",
+      "Extinction des brûleurs",
+      "Alarme centrale combustible active"
+    ],
+    "actions": [
+      "Vérifier la pression réseau gaz",
+      "Contrôler les vannes d'arrêt sur la ligne",
+      "Inspecter le détendeur principal",
+      "Alerter le fournisseur de gaz si nécessaire"
+    ],
+    "preventives": [
+      "Contrôle mensuel de la pression gaz",
+      "Inspection trimestrielle du détendeur",
+      "Test annuel des vannes de sécurité"
+    ]
+  },
+  "Contrôle Etanché. Vanne Gaz": {
+    "description": "Contrôle Etanché. Vanne Gaz",
+    "type": "Burner Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Test d'étanchéité négatif",
+      "Fuite détectée sur la vanne gaz",
+      "Impossibilité de démarrage sécurisé"
+    ],
+    "actions": [
+      "Effectuer le test d'étanchéité complet",
+      "Localiser précisément la fuite",
+      "Remplacer le joint ou la vanne défaillante",
+      "Ne pas redémarrer avant validation"
+    ],
+    "preventives": [
+      "Test d'étanchéité mensuel obligatoire",
+      "Remplacement préventif des joints annuellement",
+      "Inspection visuelle des vannes hebdomadaire"
+    ]
+  },
+  "Blocage Ordinateur": {
+    "description": "Blocage Ordinateur",
+    "type": "Alimentation Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Interface superviseur figée",
+      "Perte de communication avec le PLC",
+      "Impossibilité de contrôle depuis PC"
+    ],
+    "actions": [
+      "Sauvegarder les données disponibles",
+      "Redémarrer le superviseur PC",
+      "Vérifier la connexion réseau",
+      "Contacter le service informatique si persistant"
+    ],
+    "preventives": [
+      "Redémarrage préventif hebdomadaire du PC",
+      "Mise à jour régulière du système d'exploitation",
+      "Sauvegarde automatique quotidienne des données"
+    ]
+  },
+  "Blocage PLC": {
+    "description": "Blocage PLC",
+    "type": "Alimentation Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "PLC en état de défaut",
+      "Perte de contrôle automatique",
+      "Alarmes PLC déclenchées"
+    ],
+    "actions": [
+      "Effectuer un reset du PLC depuis le logiciel",
+      "Vérifier l'alimentation du rack PLC",
+      "Contrôler les modules I/O",
+      "Recharger le programme si nécessaire"
+    ],
+    "preventives": [
+      "Vérification mensuelle de l'état du PLC",
+      "Sauvegarde du programme PLC trimestriellement",
+      "Test des modules I/O semestriellement"
+    ]
+  },
+  "Déc. Bouton d'Urgence": {
+    "description": "Déc. Bouton d'Urgence",
+    "type": "Alimentation Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Arrêt d'urgence déclenché",
+      "Coupure totale de la ligne",
+      "Bouton d'arrêt enfoncé"
+    ],
+    "actions": [
+      "Identifier quel bouton a été actionné",
+      "Vérifier la sécurité de la zone concernée",
+      "Corriger la cause du déclenchement",
+      "Déverrouiller le bouton par rotation après vérification"
+    ],
+    "preventives": [
+      "Test mensuel de tous les boutons d'urgence",
+      "Inspection visuelle hebdomadaire",
+      "Formation des opérateurs aux procédures de sécurité"
+    ]
+  },
+  "Blocage Ventilateurs": {
+    "description": "Blocage Ventilateurs",
+    "type": "Pression Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Ventilateur arrêté ou bloqué",
+      "Alarme moteur déclenchée",
+      "Dégradation de la ventilation du four"
+    ],
+    "actions": [
+      "Vérifier l'état mécanique du ventilateur",
+      "Contrôler le disjoncteur et le relais thermique",
+      "Mesurer l'intensité du moteur",
+      "Dégager tout corps étranger dans la roue"
+    ],
+    "preventives": [
+      "Graissage des roulements mensuel",
+      "Vérification des courroies trimestrielle",
+      "Nettoyage de la roue semestriel"
+    ]
+  },
+  "Test Dépression Four": {
+    "description": "Test Dépression Four",
+    "type": "Pression Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Valeur de dépression hors plage",
+      "Fonctionnement anormal des ventilateurs",
+      "Alarme dépression active"
+    ],
+    "actions": [
+      "Vérifier le fonctionnement des ventilateurs d'aspiration",
+      "Contrôler l'état des filtres",
+      "Mesurer la dépression avec un manomètre",
+      "Ajuster le débit si la valeur est hors plage"
+    ],
+    "preventives": [
+      "Mesure hebdomadaire de la dépression",
+      "Nettoyage des filtres mensuel",
+      "Étalonnage des pressostats trimestriel"
+    ]
+  },
+  "Test Basse Pression Air de Combustion": {
+    "description": "Test Basse Pression Air de Combustion",
+    "type": "Pression Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Pression air de combustion insuffisante",
+      "Risque de mauvaise combustion",
+      "Alarme basse pression active"
+    ],
+    "actions": [
+      "Vérifier le ventilateur d'air de combustion",
+      "Contrôler et nettoyer le filtre à air",
+      "Mesurer la pression réelle",
+      "Vérifier la courroie du ventilateur"
+    ],
+    "preventives": [
+      "Nettoyage du filtre à air mensuel",
+      "Vérification de la courroie trimestrielle",
+      "Étalonnage du pressostat semestriel"
+    ]
+  },
+  "Dépression Four": {
+    "description": "Dépression Four",
+    "type": "Pression Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Dépression insuffisante dans le four",
+      "Risque de refoulement de chaleur",
+      "Alarme dépression déclenchée"
+    ],
+    "actions": [
+      "Contrôler les ventilateurs d'aspiration et d'extraction",
+      "Vérifier l'état des filtres et conduits",
+      "Mesurer et ajuster la dépression",
+      "Inspecter les joints d'étanchéité"
+    ],
+    "preventives": [
+      "Contrôle hebdomadaire de la dépression",
+      "Nettoyage mensuel des filtres",
+      "Inspection semestrielle des joints"
+    ]
+  },
+  "Haute Pression Air de Combustion": {
+    "description": "Haute Pression Air de Combustion",
+    "type": "Pression Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Pression air de combustion trop élevée",
+      "Risque de déséquilibre de combustion",
+      "Alarme haute pression active"
+    ],
+    "actions": [
+      "Vérifier que les conduits d'air ne sont pas obstrués",
+      "Contrôler le registre de débit d'air",
+      "Réduire la consigne de pression",
+      "Vérifier l'état du ventilateur"
+    ],
+    "preventives": [
+      "Inspection mensuelle des conduits",
+      "Vérification trimestrielle du registre",
+      "Contrôle annuel du ventilateur"
+    ]
+  },
+  "Basse Pression Air de Combustion": {
+    "description": "Basse Pression Air de Combustion",
+    "type": "Pression Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Pression air insuffisante",
+      "Combustion incomplète possible",
+      "Alarme basse pression active"
+    ],
+    "actions": [
+      "Vérifier le ventilateur d'air de combustion",
+      "Nettoyer le filtre à air",
+      "Mesurer et ajuster la pression",
+      "Remplacer le filtre si colmaté"
+    ],
+    "preventives": [
+      "Nettoyage mensuel du filtre",
+      "Vérification trimestrielle du ventilateur",
+      "Étalonnage semestriel du pressostat"
+    ]
+  },
+  "Pression Ventil. Refroid. Rapide": {
+    "description": "Pression Ventil. Refroid. Rapide",
+    "type": "Pression Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Pression ventilateur refroidissement rapide anormale",
+      "Refroidissement insuffisant",
+      "Alarme pressostat active"
+    ],
+    "actions": [
+      "Contrôler le ventilateur de refroidissement rapide",
+      "Vérifier le pressostat et ses raccordements",
+      "Nettoyer le filtre",
+      "Mesurer et comparer à la consigne"
+    ],
+    "preventives": [
+      "Nettoyage mensuel du filtre",
+      "Vérification trimestrielle du pressostat",
+      "Contrôle semestriel du ventilateur"
+    ]
+  },
+  "Pression Ventil. Refroid. Final": {
+    "description": "Pression Ventil. Refroid. Final",
+    "type": "Pression Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Pression ventilateur refroidissement final anormale",
+      "Refroidissement final insuffisant",
+      "Alarme pressostat active"
+    ],
+    "actions": [
+      "Vérifier le ventilateur de refroidissement final",
+      "Contrôler l'état du filtre et du pressostat",
+      "Mesurer la pression",
+      "Nettoyer ou remplacer le filtre"
+    ],
+    "preventives": [
+      "Nettoyage mensuel du filtre",
+      "Vérification trimestrielle du pressostat",
+      "Contrôle semestriel du ventilateur"
+    ]
+  },
+  "Dépression Ventil. Aspir. Air Chaud": {
+    "description": "Dépression Ventil. Aspir. Air Chaud",
+    "type": "Pression Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Dépression aspiration air chaud insuffisante",
+      "Air chaud mal évacué",
+      "Alarme dépression active"
+    ],
+    "actions": [
+      "Contrôler le ventilateur d'aspiration d'air chaud",
+      "Vérifier l'état des conduits et filtres",
+      "Mesurer la dépression réelle",
+      "Ajuster le registre ou nettoyer le filtre"
+    ],
+    "preventives": [
+      "Nettoyage mensuel des filtres",
+      "Vérification trimestrielle des conduits",
+      "Contrôle semestriel du ventilateur"
+    ]
+  },
+  "Dépression Ventil. Aspir. Air Chaud 2": {
+    "description": "Dépression Ventil. Aspir. Air Chaud 2",
+    "type": "Pression Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Dépression aspiration air chaud 2 insuffisante",
+      "Evacuation air chaud perturbée",
+      "Alarme dépression active"
+    ],
+    "actions": [
+      "Contrôler le second ventilateur d'aspiration",
+      "Vérifier l'état des conduits et filtres",
+      "Mesurer la dépression",
+      "Ajuster le registre si nécessaire"
+    ],
+    "preventives": [
+      "Nettoyage mensuel des filtres",
+      "Vérification trimestrielle des conduits",
+      "Contrôle semestriel du ventilateur"
+    ]
+  },
+  "Haute Pression Gaz": {
+    "description": "Haute Pression Gaz",
+    "type": "Pression Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Pression gaz trop élevée",
+      "Risque de dommage sur les brûleurs",
+      "Alarme haute pression gaz active"
+    ],
+    "actions": [
+      "Vérifier le détendeur de gaz et son réglage",
+      "Réduire la pression d'entrée",
+      "Contrôler le pressostat haute pression",
+      "Contacter le fournisseur si pression réseau anormale"
+    ],
+    "preventives": [
+      "Contrôle mensuel de la pression gaz",
+      "Étalonnage trimestriel du détendeur",
+      "Test semestriel des pressostats de sécurité"
+    ]
+  },
+  "Basse Pression Gaz": {
+    "description": "Basse Pression Gaz",
+    "type": "Pression Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Pression gaz insuffisante",
+      "Risque d'extinction des brûleurs",
+      "Alarme basse pression gaz active"
+    ],
+    "actions": [
+      "Vérifier la pression réseau gaz",
+      "Contrôler les vannes d'isolement",
+      "Vérifier l'état du détendeur",
+      "Mesurer la pression avec un manomètre étalonné"
+    ],
+    "preventives": [
+      "Contrôle mensuel de la pression",
+      "Inspection trimestrielle du détendeur",
+      "Contact régulier avec le fournisseur de gaz"
+    ]
+  },
+  "Test Pressostat Refroid. Rapide": {
+    "description": "Test Pressostat Refroid. Rapide",
+    "type": "Pression Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Test pressostat refroidissement rapide échoué",
+      "Pression non conforme à la consigne",
+      "Alarme pressostat active"
+    ],
+    "actions": [
+      "Effectuer le test du pressostat",
+      "Vérifier le raccordement et l'étalonnage",
+      "Comparer la valeur mesurée à la consigne",
+      "Remplacer le pressostat si incohérent"
+    ],
+    "preventives": [
+      "Test mensuel du pressostat",
+      "Étalonnage trimestriel",
+      "Remplacement préventif annuel si usé"
+    ]
+  },
+  "Filtre Ventilateur Refroid. Rapide": {
+    "description": "Filtre Ventilateur Refroid. Rapide",
+    "type": "Pression Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Filtre colmaté",
+      "Pression différentielle élevée",
+      "Refroidissement rapide dégradé"
+    ],
+    "actions": [
+      "Nettoyer ou remplacer le filtre immédiatement",
+      "Vérifier la pression différentielle avant/après filtre",
+      "Contrôler le ventilateur après remplacement"
+    ],
+    "preventives": [
+      "Nettoyage mensuel du filtre",
+      "Remplacement trimestriel selon encrassement",
+      "Suivi de la pression différentielle hebdomadaire"
+    ]
+  },
+  "Déc. Phtocel. sur Plan Rouleaux": {
+    "description": "Déc. Phtocel. sur Plan Rouleaux",
+    "type": "Alimentation Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Cellule photoélectrique déclenchée",
+      "Détection de présence anormale",
+      "Arrêt du plan de rouleaux"
+    ],
+    "actions": [
+      "Vérifier l'alignement de la cellule photoélectrique",
+      "Nettoyer la lentille émetteur/récepteur",
+      "Réaligner les deux éléments",
+      "Remplacer la cellule si défaillante"
+    ],
+    "preventives": [
+      "Nettoyage mensuel des lentilles",
+      "Vérification de l'alignement trimestriel",
+      "Test de fonctionnement hebdomadaire"
+    ]
+  },
+  "Déc. Phtocel. sous Plan Roul.": {
+    "description": "Déc. Phtocel. sous Plan Roul.",
+    "type": "Alimentation Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Cellule photoélectrique sous rouleaux déclenchée",
+      "Détection anormale en dessous du plan",
+      "Arrêt déclenché"
+    ],
+    "actions": [
+      "Vérifier la cellule photoélectrique sous le plan",
+      "Nettoyer la lentille et réaligner",
+      "Contrôler le câblage",
+      "Remplacer la cellule si défaillante"
+    ],
+    "preventives": [
+      "Nettoyage mensuel des lentilles",
+      "Vérification trimestrielle de l'alignement",
+      "Test hebdomadaire du fonctionnement"
+    ]
+  },
+  "Filtre Haute Température 1": {
+    "description": "Filtre Haute Température 1",
+    "type": "Temperature Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Filtre haute température zone 1 colmaté",
+      "Surchauffe dans la zone filtre",
+      "Alarme filtre active"
+    ],
+    "actions": [
+      "Arrêter et laisser refroidir avant intervention",
+      "Remplacer le filtre haute température",
+      "Contrôler la température autour du filtre",
+      "Inspecter l'isolation thermique"
+    ],
+    "preventives": [
+      "Remplacement préventif mensuel du filtre",
+      "Contrôle hebdomadaire de la température",
+      "Inspection trimestrielle de l'isolation"
+    ]
+  },
+  "Filtre Haute Température 2": {
+    "description": "Filtre Haute Température 2",
+    "type": "Temperature Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Filtre haute température zone 2 colmaté",
+      "Surchauffe dans la zone filtre",
+      "Alarme filtre active"
+    ],
+    "actions": [
+      "Arrêter et laisser refroidir avant intervention",
+      "Remplacer le filtre haute température",
+      "Contrôler la température autour du filtre",
+      "Inspecter l'isolation thermique"
+    ],
+    "preventives": [
+      "Remplacement préventif mensuel du filtre",
+      "Contrôle hebdomadaire de la température",
+      "Inspection trimestrielle de l'isolation"
+    ]
+  },
+  "Températ. Elevée Régulateurs": {
+    "description": "Températ. Elevée Régulateurs",
+    "type": "Temperature Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Température élevée dans le coffret régulateurs",
+      "Risque de défaillance des cartes électroniques",
+      "Alarme température active"
+    ],
+    "actions": [
+      "Vérifier la ventilation du local régulateurs",
+      "Nettoyer les filtres de ventilation du coffret",
+      "Contrôler la température ambiante",
+      "Vérifier les connexions des thermocouples"
+    ],
+    "preventives": [
+      "Nettoyage mensuel des filtres de ventilation",
+      "Contrôle trimestriel de la ventilation",
+      "Vérification semestrielle des connexions"
+    ]
+  },
+  "Température de Sécurité Régulateurs": {
+    "description": "Température de Sécurité Régulateurs",
+    "type": "Temperature Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Température de sécurité dépassée dans le coffret",
+      "Arrêt de sécurité des régulateurs",
+      "Alarme critique active"
+    ],
+    "actions": [
+      "Couper l'alimentation et laisser refroidir",
+      "Vérifier la ventilation du coffret",
+      "Inspecter les connexions",
+      "Ne redémarrer qu'après retour à température normale"
+    ],
+    "preventives": [
+      "Contrôle mensuel de la ventilation",
+      "Vérification trimestrielle des seuils de sécurité",
+      "Nettoyage semestriel du coffret"
+    ]
+  },
+  "Exclus. Chute Gaz des Régulateurs": {
+    "description": "Exclus. Chute Gaz des Régulateurs",
+    "type": "Burner Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Chute de pression gaz détectée par les régulateurs",
+      "Extinction des brûleurs concernés",
+      "Alarme exclusion active"
+    ],
+    "actions": [
+      "Vérifier la pression gaz en entrée des régulateurs",
+      "Contrôler les vannes de gaz sur chaque brûleur",
+      "Mesurer et comparer à la consigne",
+      "Identifier et corriger la chute de pression"
+    ],
+    "preventives": [
+      "Contrôle mensuel de la pression gaz",
+      "Inspection trimestrielle des vannes",
+      "Étalonnage semestriel des régulateurs"
+    ]
+  },
+  "Rouleaux Arrêtés": {
+    "description": "Rouleaux Arrêtés",
+    "type": "Alimentation Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Arrêt complet des rouleaux de transport",
+      "Bloquage du flux de production",
+      "Alarme rouleaux active"
+    ],
+    "actions": [
+      "Vérifier le motoréducteur et la chaîne d'entraînement",
+      "Contrôler le disjoncteur et le variateur de fréquence",
+      "Dégager tout blocage mécanique",
+      "Vérifier le codeur de vitesse"
+    ],
+    "preventives": [
+      "Graissage mensuel des chaînes et roulements",
+      "Inspection trimestrielle du variateur",
+      "Contrôle semestriel du motoréducteur"
+    ]
+  },
+  "Déc. Câble Sécurité Rouleaux": {
+    "description": "Déc. Câble Sécurité Rouleaux",
+    "type": "Alimentation Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Câble de sécurité déclenché",
+      "Arrêt de la ligne par sécurité",
+      "Alarme câble active"
+    ],
+    "actions": [
+      "Localiser le câble de sécurité déclenché",
+      "Identifier la cause du déclenchement",
+      "Corriger le problème mécanique ou de sécurité",
+      "Réarmer le câble après vérification complète"
+    ],
+    "preventives": [
+      "Test mensuel de tous les câbles de sécurité",
+      "Inspection visuelle hebdomadaire",
+      "Formation des opérateurs aux procédures"
+    ]
+  },
+  "Température de sécurité SFT 1": {
+    "description": "Température de sécurité SFT 1",
+    "type": "Temperature Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Seuil de température de sécurité SFT 1 dépassé",
+      "Arrêt de sécurité de la zone 1",
+      "Alarme critique température active"
+    ],
+    "actions": [
+      "Identifier la zone SFT 1 en surchauffe",
+      "Contrôler le thermocouple de sécurité",
+      "Réduire la consigne de température",
+      "Inspecter l'isolation thermique de la zone"
+    ],
+    "preventives": [
+      "Étalonnage trimestriel des thermocouples SFT",
+      "Contrôle mensuel des seuils de sécurité",
+      "Inspection semestrielle de l'isolation"
+    ]
+  },
+  "Température de sécurité SFT 2": {
+    "description": "Température de sécurité SFT 2",
+    "type": "Temperature Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Seuil de température de sécurité SFT 2 dépassé",
+      "Arrêt de sécurité de la zone 2",
+      "Alarme critique température active"
+    ],
+    "actions": [
+      "Identifier la zone SFT 2 en surchauffe",
+      "Contrôler le thermocouple de sécurité",
+      "Réduire la consigne de température",
+      "Inspecter l'isolation thermique"
+    ],
+    "preventives": [
+      "Étalonnage trimestriel des thermocouples SFT",
+      "Contrôle mensuel des seuils de sécurité",
+      "Inspection semestrielle de l'isolation"
+    ]
+  },
+  "Température de sécurité SFT 3": {
+    "description": "Température de sécurité SFT 3",
+    "type": "Temperature Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Seuil de température de sécurité SFT 3 dépassé",
+      "Arrêt de sécurité de la zone 3",
+      "Alarme critique température active"
+    ],
+    "actions": [
+      "Identifier la zone SFT 3 en surchauffe",
+      "Contrôler le thermocouple de sécurité",
+      "Réduire la consigne de température",
+      "Inspecter l'isolation thermique"
+    ],
+    "preventives": [
+      "Étalonnage trimestriel des thermocouples SFT",
+      "Contrôle mensuel des seuils de sécurité",
+      "Inspection semestrielle de l'isolation"
+    ]
+  },
+  "Brûleurs zone 1 côté extraction": {
+    "description": "Brûleurs zone 1 côté extraction",
+    "type": "Burner Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Brûleur(s) zone 1 côté extraction éteint(s)",
+      "Perte de puissance thermique zone 1",
+      "Ecart température consigne/mesure"
+    ],
+    "actions": [
+      "Identifier le(s) brûleur(s) défaillant(s) zone 1",
+      "Vérifier l'allumage et la flamme",
+      "Inspecter les électrodes et les buses",
+      "Vérifier la vanne de gaz individuelle",
+      "Remplacer le brûleur si nécessaire"
+    ],
+    "preventives": [
+      "Nettoyage des brûleurs zone 1 toutes les 2 semaines",
+      "Vérification des électrodes mensuelle",
+      "Constituer un stock de brûleurs de rechange",
+      "Inspection trimestrielle des buses"
+    ]
+  },
+  "Brûleurs zone 1 côté motorisé": {
+    "description": "Brûleurs zone 1 côté motorisé",
+    "type": "Burner Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Brûleur(s) zone 1 côté motorisé éteint(s)",
+      "Perte de puissance thermique zone 1",
+      "Ecart température consigne/mesure"
+    ],
+    "actions": [
+      "Identifier le(s) brûleur(s) défaillant(s) zone 1",
+      "Vérifier l'allumage et la flamme",
+      "Inspecter les électrodes et les buses",
+      "Vérifier la vanne de gaz individuelle",
+      "Remplacer le brûleur si nécessaire"
+    ],
+    "preventives": [
+      "Nettoyage des brûleurs zone 1 toutes les 2 semaines",
+      "Vérification des électrodes mensuelle",
+      "Constituer un stock de brûleurs de rechange",
+      "Inspection trimestrielle des buses"
+    ]
+  },
+  "Brûleurs zone 2 côté extraction": {
+    "description": "Brûleurs zone 2 côté extraction",
+    "type": "Burner Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Brûleur(s) zone 2 côté extraction éteint(s)",
+      "Perte de puissance thermique zone 2",
+      "Ecart température consigne/mesure"
+    ],
+    "actions": [
+      "Identifier le(s) brûleur(s) défaillant(s) zone 2",
+      "Vérifier l'allumage et la flamme",
+      "Inspecter les électrodes et les buses",
+      "Vérifier la vanne de gaz individuelle",
+      "Remplacer le brûleur si nécessaire"
+    ],
+    "preventives": [
+      "Nettoyage des brûleurs zone 2 toutes les 2 semaines",
+      "Vérification des électrodes mensuelle",
+      "Constituer un stock de brûleurs de rechange",
+      "Inspection trimestrielle des buses"
+    ]
+  },
+  "Brûleurs zone 2 côté motorisé": {
+    "description": "Brûleurs zone 2 côté motorisé",
+    "type": "Burner Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Brûleur(s) zone 2 côté motorisé éteint(s)",
+      "Perte de puissance thermique zone 2",
+      "Ecart température consigne/mesure"
+    ],
+    "actions": [
+      "Identifier le(s) brûleur(s) défaillant(s) zone 2",
+      "Vérifier l'allumage et la flamme",
+      "Inspecter les électrodes et les buses",
+      "Vérifier la vanne de gaz individuelle",
+      "Remplacer le brûleur si nécessaire"
+    ],
+    "preventives": [
+      "Nettoyage des brûleurs zone 2 toutes les 2 semaines",
+      "Vérification des électrodes mensuelle",
+      "Constituer un stock de brûleurs de rechange",
+      "Inspection trimestrielle des buses"
+    ]
+  },
+  "Brûleurs zone 3 côté extraction": {
+    "description": "Brûleurs zone 3 côté extraction",
+    "type": "Burner Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Brûleur(s) zone 3 côté extraction éteint(s)",
+      "Perte de puissance thermique zone 3",
+      "Ecart température consigne/mesure"
+    ],
+    "actions": [
+      "Identifier le(s) brûleur(s) défaillant(s) zone 3",
+      "Vérifier l'allumage et la flamme",
+      "Inspecter les électrodes et les buses",
+      "Vérifier la vanne de gaz individuelle",
+      "Remplacer le brûleur si nécessaire"
+    ],
+    "preventives": [
+      "Nettoyage des brûleurs zone 3 toutes les 2 semaines",
+      "Vérification des électrodes mensuelle",
+      "Constituer un stock de brûleurs de rechange",
+      "Inspection trimestrielle des buses"
+    ]
+  },
+  "Brûleurs zone 3 côté motorisé": {
+    "description": "Brûleurs zone 3 côté motorisé",
+    "type": "Burner Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Brûleur(s) zone 3 côté motorisé éteint(s)",
+      "Perte de puissance thermique zone 3",
+      "Ecart température consigne/mesure"
+    ],
+    "actions": [
+      "Identifier le(s) brûleur(s) défaillant(s) zone 3",
+      "Vérifier l'allumage et la flamme",
+      "Inspecter les électrodes et les buses",
+      "Vérifier la vanne de gaz individuelle",
+      "Remplacer le brûleur si nécessaire"
+    ],
+    "preventives": [
+      "Nettoyage des brûleurs zone 3 toutes les 2 semaines",
+      "Vérification des électrodes mensuelle",
+      "Constituer un stock de brûleurs de rechange",
+      "Inspection trimestrielle des buses"
+    ]
+  },
+  "Brûleurs zone 4 côté extraction": {
+    "description": "Brûleurs zone 4 côté extraction",
+    "type": "Burner Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Brûleur(s) zone 4 côté extraction éteint(s)",
+      "Perte de puissance thermique zone 4",
+      "Ecart température consigne/mesure"
+    ],
+    "actions": [
+      "Identifier le(s) brûleur(s) défaillant(s) zone 4",
+      "Vérifier l'allumage et la flamme",
+      "Inspecter les électrodes et les buses",
+      "Vérifier la vanne de gaz individuelle",
+      "Remplacer le brûleur si nécessaire"
+    ],
+    "preventives": [
+      "Nettoyage des brûleurs zone 4 toutes les 2 semaines",
+      "Vérification des électrodes mensuelle",
+      "Constituer un stock de brûleurs de rechange",
+      "Inspection trimestrielle des buses"
+    ]
+  },
+  "Brûleurs zone 4 côté motorisé": {
+    "description": "Brûleurs zone 4 côté motorisé",
+    "type": "Burner Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Brûleur(s) zone 4 côté motorisé éteint(s)",
+      "Perte de puissance thermique zone 4",
+      "Ecart température consigne/mesure"
+    ],
+    "actions": [
+      "Identifier le(s) brûleur(s) défaillant(s) zone 4",
+      "Vérifier l'allumage et la flamme",
+      "Inspecter les électrodes et les buses",
+      "Vérifier la vanne de gaz individuelle",
+      "Remplacer le brûleur si nécessaire"
+    ],
+    "preventives": [
+      "Nettoyage des brûleurs zone 4 toutes les 2 semaines",
+      "Vérification des électrodes mensuelle",
+      "Constituer un stock de brûleurs de rechange",
+      "Inspection trimestrielle des buses"
+    ]
+  },
+  "Brûleurs zone 5 côté extraction": {
+    "description": "Brûleurs zone 5 côté extraction",
+    "type": "Burner Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Brûleur(s) zone 5 côté extraction éteint(s)",
+      "Perte de puissance thermique zone 5",
+      "Ecart température consigne/mesure"
+    ],
+    "actions": [
+      "Identifier le(s) brûleur(s) défaillant(s) zone 5",
+      "Vérifier l'allumage et la flamme",
+      "Inspecter les électrodes et les buses",
+      "Vérifier la vanne de gaz individuelle",
+      "Remplacer le brûleur si nécessaire"
+    ],
+    "preventives": [
+      "Nettoyage des brûleurs zone 5 toutes les 2 semaines",
+      "Vérification des électrodes mensuelle",
+      "Constituer un stock de brûleurs de rechange",
+      "Inspection trimestrielle des buses"
+    ]
+  },
+  "Brûleurs zone 5 côté motorisé": {
+    "description": "Brûleurs zone 5 côté motorisé",
+    "type": "Burner Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Brûleur(s) zone 5 côté motorisé éteint(s)",
+      "Perte de puissance thermique zone 5",
+      "Ecart température consigne/mesure"
+    ],
+    "actions": [
+      "Identifier le(s) brûleur(s) défaillant(s) zone 5",
+      "Vérifier l'allumage et la flamme",
+      "Inspecter les électrodes et les buses",
+      "Vérifier la vanne de gaz individuelle",
+      "Remplacer le brûleur si nécessaire"
+    ],
+    "preventives": [
+      "Nettoyage des brûleurs zone 5 toutes les 2 semaines",
+      "Vérification des électrodes mensuelle",
+      "Constituer un stock de brûleurs de rechange",
+      "Inspection trimestrielle des buses"
+    ]
+  },
+  "Brûleurs zone 6 côté extraction": {
+    "description": "Brûleurs zone 6 côté extraction",
+    "type": "Burner Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Brûleur(s) zone 6 côté extraction éteint(s)",
+      "Perte de puissance thermique zone 6",
+      "Ecart température consigne/mesure"
+    ],
+    "actions": [
+      "Identifier le(s) brûleur(s) défaillant(s) zone 6",
+      "Vérifier l'allumage et la flamme",
+      "Inspecter les électrodes et les buses",
+      "Vérifier la vanne de gaz individuelle",
+      "Remplacer le brûleur si nécessaire"
+    ],
+    "preventives": [
+      "Nettoyage des brûleurs zone 6 toutes les 2 semaines",
+      "Vérification des électrodes mensuelle",
+      "Constituer un stock de brûleurs de rechange",
+      "Inspection trimestrielle des buses"
+    ]
+  },
+  "Brûleurs zone 6 côté motorisé": {
+    "description": "Brûleurs zone 6 côté motorisé",
+    "type": "Burner Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Brûleur(s) zone 6 côté motorisé éteint(s)",
+      "Perte de puissance thermique zone 6",
+      "Ecart température consigne/mesure"
+    ],
+    "actions": [
+      "Identifier le(s) brûleur(s) défaillant(s) zone 6",
+      "Vérifier l'allumage et la flamme",
+      "Inspecter les électrodes et les buses",
+      "Vérifier la vanne de gaz individuelle",
+      "Remplacer le brûleur si nécessaire"
+    ],
+    "preventives": [
+      "Nettoyage des brûleurs zone 6 toutes les 2 semaines",
+      "Vérification des électrodes mensuelle",
+      "Constituer un stock de brûleurs de rechange",
+      "Inspection trimestrielle des buses"
+    ]
+  },
+  "Brûleurs zone 7 côté extraction": {
+    "description": "Brûleurs zone 7 côté extraction",
+    "type": "Burner Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Brûleur(s) zone 7 côté extraction éteint(s)",
+      "Perte de puissance thermique zone 7",
+      "Ecart température consigne/mesure"
+    ],
+    "actions": [
+      "Identifier le(s) brûleur(s) défaillant(s) zone 7",
+      "Vérifier l'allumage et la flamme",
+      "Inspecter les électrodes et les buses",
+      "Vérifier la vanne de gaz individuelle",
+      "Remplacer le brûleur si nécessaire"
+    ],
+    "preventives": [
+      "Nettoyage des brûleurs zone 7 toutes les 2 semaines",
+      "Vérification des électrodes mensuelle",
+      "Constituer un stock de brûleurs de rechange",
+      "Inspection trimestrielle des buses"
+    ]
+  },
+  "Brûleurs zone 7 côté motorisé": {
+    "description": "Brûleurs zone 7 côté motorisé",
+    "type": "Burner Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Brûleur(s) zone 7 côté motorisé éteint(s)",
+      "Perte de puissance thermique zone 7",
+      "Ecart température consigne/mesure"
+    ],
+    "actions": [
+      "Identifier le(s) brûleur(s) défaillant(s) zone 7",
+      "Vérifier l'allumage et la flamme",
+      "Inspecter les électrodes et les buses",
+      "Vérifier la vanne de gaz individuelle",
+      "Remplacer le brûleur si nécessaire"
+    ],
+    "preventives": [
+      "Nettoyage des brûleurs zone 7 toutes les 2 semaines",
+      "Vérification des électrodes mensuelle",
+      "Constituer un stock de brûleurs de rechange",
+      "Inspection trimestrielle des buses"
+    ]
+  },
+  "Arrêt Vanne Combustible depuis API": {
+    "description": "Arrêt Vanne Combustible depuis API",
+    "type": "Burner Failure",
+    "urgence": "High",
+    "category": "Bloquante",
+    "symptomes": [
+      "Vanne combustible fermée par commande API",
+      "Arrêt de l'alimentation gaz",
+      "Extinction des brûleurs"
+    ],
+    "actions": [
+      "Vérifier la commande API d'arrêt de la vanne",
+      "Contrôler le programme PLC pour identifier la cause",
+      "Vérifier l'état de la vanne et son actionneur",
+      "Corriger la cause avant réarmement"
+    ],
+    "preventives": [
+      "Vérification mensuelle de la logique API",
+      "Test trimestriel de la vanne et de son actionneur",
+      "Audit semestriel du programme PLC"
+    ]
+  },
+  "Ecart max. de Tempér. Zone: K29": {
+    "description": "Ecart max. de Tempér. Zone: K29",
+    "type": "Temperature Failure",
+    "urgence": "Low",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Température zone K29 supérieure à la consigne max",
+      "Ecart positif détecté",
+      "Alarme de surveillance déclenchée"
+    ],
+    "actions": [
+      "Vérifier le thermocouple zone K29",
+      "Contrôler le régulateur PID associé",
+      "Réduire légèrement la consigne si nécessaire",
+      "Surveiller l'évolution de l'écart"
+    ],
+    "preventives": [
+      "Étalonnage trimestriel du thermocouple zone K29",
+      "Vérification mensuelle des paramètres PID",
+      "Suivi hebdomadaire des profils thermiques"
+    ]
+  },
+  "Ecart max. de Tempér. Zone: S15": {
+    "description": "Ecart max. de Tempér. Zone: S15",
+    "type": "Temperature Failure",
+    "urgence": "Low",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Température zone S15 supérieure à la consigne max",
+      "Ecart positif détecté",
+      "Alarme de surveillance déclenchée"
+    ],
+    "actions": [
+      "Vérifier le thermocouple zone S15",
+      "Contrôler le régulateur PID associé",
+      "Réduire légèrement la consigne si nécessaire",
+      "Surveiller l'évolution de l'écart"
+    ],
+    "preventives": [
+      "Étalonnage trimestriel du thermocouple zone S15",
+      "Vérification mensuelle des paramètres PID",
+      "Suivi hebdomadaire des profils thermiques"
+    ]
+  },
+  "Ecart max. de Tempér. Zone: S17": {
+    "description": "Ecart max. de Tempér. Zone: S17",
+    "type": "Temperature Failure",
+    "urgence": "Low",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Température zone S17 supérieure à la consigne max",
+      "Ecart positif détecté",
+      "Alarme de surveillance déclenchée"
+    ],
+    "actions": [
+      "Vérifier le thermocouple zone S17",
+      "Contrôler le régulateur PID associé",
+      "Réduire légèrement la consigne si nécessaire",
+      "Surveiller l'évolution de l'écart"
+    ],
+    "preventives": [
+      "Étalonnage trimestriel du thermocouple zone S17",
+      "Vérification mensuelle des paramètres PID",
+      "Suivi hebdomadaire des profils thermiques"
+    ]
+  },
+  "Ecart max. de Tempér. Zone: S19": {
+    "description": "Ecart max. de Tempér. Zone: S19",
+    "type": "Temperature Failure",
+    "urgence": "Low",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Température zone S19 supérieure à la consigne max",
+      "Ecart positif détecté",
+      "Alarme de surveillance déclenchée"
+    ],
+    "actions": [
+      "Vérifier le thermocouple zone S19",
+      "Contrôler le régulateur PID associé",
+      "Réduire légèrement la consigne si nécessaire",
+      "Surveiller l'évolution de l'écart"
+    ],
+    "preventives": [
+      "Étalonnage trimestriel du thermocouple zone S19",
+      "Vérification mensuelle des paramètres PID",
+      "Suivi hebdomadaire des profils thermiques"
+    ]
+  },
+  "Ecart maximum: LBV": {
+    "description": "Ecart maximum: LBV",
+    "type": "Temperature Failure",
+    "urgence": "Low",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Température LBV supérieure à la consigne max",
+      "Ecart positif détecté",
+      "Alarme surveillance active"
+    ],
+    "actions": [
+      "Vérifier le capteur LBV",
+      "Contrôler le régulateur associé",
+      "Réduire la consigne si nécessaire",
+      "Surveiller l'évolution de l'écart"
+    ],
+    "preventives": [
+      "Étalonnage trimestriel du capteur LBV",
+      "Vérification mensuelle du régulateur",
+      "Suivi hebdomadaire des températures"
+    ]
+  },
+  "Ecart min. de Tempér. Zone: S19": {
+    "description": "Ecart min. de Tempér. Zone: S19",
+    "type": "Temperature Failure",
+    "urgence": "Low",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Température zone S19 inférieure à la consigne min",
+      "Ecart négatif détecté",
+      "Alarme de surveillance déclenchée"
+    ],
+    "actions": [
+      "Vérifier le thermocouple zone S19",
+      "Contrôler les brûleurs de la zone",
+      "Augmenter légèrement la consigne",
+      "Surveiller l'évolution de l'écart"
+    ],
+    "preventives": [
+      "Étalonnage trimestriel du thermocouple zone S19",
+      "Vérification mensuelle des brûleurs",
+      "Suivi hebdomadaire des profils thermiques"
+    ]
+  },
+  "Filtre Vent. Refr. Rapide": {
+    "description": "Filtre Vent. Refr. Rapide",
+    "type": "Pression Failure",
+    "urgence": "Medium",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Filtre ventilateur refroidissement rapide encrassé",
+      "Pression différentielle élevée",
+      "Performance de refroidissement réduite"
+    ],
+    "actions": [
+      "Nettoyer le filtre du ventilateur de refroidissement",
+      "Vérifier la pression différentielle",
+      "Contrôler le débit d'air après nettoyage",
+      "Remplacer le filtre si très encrassé"
+    ],
+    "preventives": [
+      "Nettoyage mensuel du filtre",
+      "Remplacement trimestriel préventif",
+      "Suivi hebdomadaire de la pression différentielle"
+    ]
+  },
+  "Max. Erreur de Vitesse autorisée": {
+    "description": "Max. Erreur de Vitesse autorisée",
+    "type": "Alimentation Failure",
+    "urgence": "Medium",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Erreur de vitesse des rouleaux dépassant le seuil",
+      "Ecart entre vitesse consigne et mesurée",
+      "Alarme vitesse déclenchée"
+    ],
+    "actions": [
+      "Vérifier le variateur de fréquence",
+      "Contrôler le codeur de vitesse",
+      "Inspecter la chaîne d'entraînement",
+      "Ajuster le paramètre de vitesse si nécessaire"
+    ],
+    "preventives": [
+      "Vérification mensuelle du variateur",
+      "Contrôle trimestriel du codeur",
+      "Lubrification régulière de la chaîne"
+    ]
+  },
+  "Oscillation Entraînements": {
+    "description": "Oscillation Entraînements",
+    "type": "Alimentation Failure",
+    "urgence": "Medium",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Oscillations détectées sur les entraînements",
+      "Instabilité de la vitesse de transport",
+      "Alarme oscillation active"
+    ],
+    "actions": [
+      "Vérifier les paramètres PID du variateur",
+      "Contrôler l'état mécanique des entraînements",
+      "Inspecter les roulements et les courroies",
+      "Ajuster les gains du régulateur de vitesse"
+    ],
+    "preventives": [
+      "Vérification mensuelle des paramètres variateur",
+      "Contrôle trimestriel des roulements",
+      "Lubrification régulière des entraînements"
+    ]
+  },
+  "Ecart max. de Tempér. Zone: K27": {
+    "description": "Ecart max. de Tempér. Zone: K27",
+    "type": "Temperature Failure",
+    "urgence": "Low",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Température zone K27 supérieure à la consigne max",
+      "Ecart positif détecté",
+      "Alarme de surveillance déclenchée"
+    ],
+    "actions": [
+      "Vérifier le thermocouple zone K27",
+      "Contrôler le régulateur PID associé",
+      "Réduire légèrement la consigne si nécessaire",
+      "Surveiller l'évolution de l'écart"
+    ],
+    "preventives": [
+      "Étalonnage trimestriel du thermocouple zone K27",
+      "Vérification mensuelle des paramètres PID",
+      "Suivi hebdomadaire des profils thermiques"
+    ]
+  },
+  "Ecart max. de Tempér. Zone: K7": {
+    "description": "Ecart max. de Tempér. Zone: K7",
+    "type": "Temperature Failure",
+    "urgence": "Low",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Température zone K7 supérieure à la consigne max",
+      "Ecart positif détecté",
+      "Alarme de surveillance déclenchée"
+    ],
+    "actions": [
+      "Vérifier le thermocouple zone K7",
+      "Contrôler le régulateur PID associé",
+      "Réduire légèrement la consigne si nécessaire",
+      "Surveiller l'évolution de l'écart"
+    ],
+    "preventives": [
+      "Étalonnage trimestriel du thermocouple zone K7",
+      "Vérification mensuelle des paramètres PID",
+      "Suivi hebdomadaire des profils thermiques"
+    ]
+  },
+  "Conditionneur Tableau Electrique non OK": {
+    "description": "Conditionneur Tableau Electrique non OK",
+    "type": "Alimentation Failure",
+    "urgence": "Medium",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Conditionneur d'air du tableau électrique en défaut",
+      "Risque de surchauffe des composants",
+      "Alarme climatisation active"
+    ],
+    "actions": [
+      "Vérifier l'état du conditionneur d'air",
+      "Contrôler le filtre et le compresseur",
+      "Mesurer la température dans le tableau",
+      "Remplacer le conditionneur si défaillant"
+    ],
+    "preventives": [
+      "Nettoyage mensuel du filtre",
+      "Vérification trimestrielle du compresseur",
+      "Remplacement préventif tous les 3 ans"
+    ]
+  },
+  "Décl. Phtlocel. sur Plan Rouleaux": {
+    "description": "Décl. Phtlocel. sur Plan Rouleaux",
+    "type": "Alimentation Failure",
+    "urgence": "Medium",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Cellule photoélectrique déclenchée sur plan des rouleaux",
+      "Détection de présence anormale",
+      "Alarme non bloquante active"
+    ],
+    "actions": [
+      "Vérifier l'alignement de la cellule photoélectrique",
+      "Nettoyer la lentille émetteur/récepteur",
+      "Réaligner les éléments",
+      "Surveiller le comportement"
+    ],
+    "preventives": [
+      "Nettoyage mensuel des lentilles",
+      "Vérification trimestrielle de l'alignement",
+      "Test hebdomadaire de fonctionnement"
+    ]
+  },
+  "Gradient positif de Tempér. Zone: S23": {
+    "description": "Gradient positif de Tempér. Zone: S23",
+    "type": "Temperature Failure",
+    "urgence": "Medium",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Gradient de montée en température trop rapide zone S23",
+      "Risque de choc thermique sur les carreaux",
+      "Alarme gradient positif active"
+    ],
+    "actions": [
+      "Réduire la puissance des brûleurs zone S23",
+      "Contrôler la vitesse de montée en température",
+      "Ajuster la consigne ou la rampe de chauffe",
+      "Surveiller la qualité des carreaux en sortie"
+    ],
+    "preventives": [
+      "Vérification mensuelle des profils de chauffe",
+      "Étalonnage trimestriel des thermocouples zone S23",
+      "Formation des opérateurs aux profils thermiques"
+    ]
+  },
+  "Gradient négatif de Tempér. Zone: S23": {
+    "description": "Gradient négatif de Tempér. Zone: S23",
+    "type": "Temperature Failure",
+    "urgence": "Medium",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Chute de température trop rapide zone S23",
+      "Risque de défaut de cuisson",
+      "Alarme gradient négatif active"
+    ],
+    "actions": [
+      "Vérifier les brûleurs de la zone S23",
+      "Contrôler l'isolation thermique",
+      "Ajuster la consigne à la hausse",
+      "Surveiller l'évolution de la température"
+    ],
+    "preventives": [
+      "Vérification mensuelle des brûleurs zone S23",
+      "Inspection trimestrielle de l'isolation",
+      "Suivi hebdomadaire des profils thermiques"
+    ]
+  },
+  "Ecart max. de Tempér. Zone: KE1": {
+    "description": "Ecart max. de Tempér. Zone: KE1",
+    "type": "Temperature Failure",
+    "urgence": "Low",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Température zone KE1 supérieure à la consigne max",
+      "Ecart positif détecté",
+      "Alarme de surveillance déclenchée"
+    ],
+    "actions": [
+      "Vérifier le thermocouple zone KE1",
+      "Contrôler le régulateur PID associé",
+      "Réduire légèrement la consigne si nécessaire",
+      "Surveiller l'évolution de l'écart"
+    ],
+    "preventives": [
+      "Étalonnage trimestriel du thermocouple zone KE1",
+      "Vérification mensuelle des paramètres PID",
+      "Suivi hebdomadaire des profils thermiques"
+    ]
+  },
+  "Ecart max. de Tempér. Zone: KP32": {
+    "description": "Ecart max. de Tempér. Zone: KP32",
+    "type": "Temperature Failure",
+    "urgence": "Low",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Température zone KP32 supérieure à la consigne max",
+      "Ecart positif détecté",
+      "Alarme de surveillance déclenchée"
+    ],
+    "actions": [
+      "Vérifier le thermocouple zone KP32",
+      "Contrôler le régulateur PID associé",
+      "Réduire légèrement la consigne si nécessaire",
+      "Surveiller l'évolution de l'écart"
+    ],
+    "preventives": [
+      "Étalonnage trimestriel du thermocouple zone KP32",
+      "Vérification mensuelle des paramètres PID",
+      "Suivi hebdomadaire des profils thermiques"
+    ]
+  },
+  "Ecart max. de Tempér. Zone: S18": {
+    "description": "Ecart max. de Tempér. Zone: S18",
+    "type": "Temperature Failure",
+    "urgence": "Low",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Température zone S18 supérieure à la consigne max",
+      "Ecart positif détecté",
+      "Alarme de surveillance déclenchée"
+    ],
+    "actions": [
+      "Vérifier le thermocouple zone S18",
+      "Contrôler le régulateur PID associé",
+      "Réduire légèrement la consigne si nécessaire",
+      "Surveiller l'évolution de l'écart"
+    ],
+    "preventives": [
+      "Étalonnage trimestriel du thermocouple zone S18",
+      "Vérification mensuelle des paramètres PID",
+      "Suivi hebdomadaire des profils thermiques"
+    ]
+  },
+  "Ecart max. de Tempér. Zone: S20": {
+    "description": "Ecart max. de Tempér. Zone: S20",
+    "type": "Temperature Failure",
+    "urgence": "Low",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Température zone S20 supérieure à la consigne max",
+      "Ecart positif détecté",
+      "Alarme de surveillance déclenchée"
+    ],
+    "actions": [
+      "Vérifier le thermocouple zone S20",
+      "Contrôler le régulateur PID associé",
+      "Réduire légèrement la consigne si nécessaire",
+      "Surveiller l'évolution de l'écart"
+    ],
+    "preventives": [
+      "Étalonnage trimestriel du thermocouple zone S20",
+      "Vérification mensuelle des paramètres PID",
+      "Suivi hebdomadaire des profils thermiques"
+    ]
+  },
+  "Ecart max. de Tempér. Zone: S23": {
+    "description": "Ecart max. de Tempér. Zone: S23",
+    "type": "Temperature Failure",
+    "urgence": "Low",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Température zone S23 supérieure à la consigne max",
+      "Ecart positif détecté",
+      "Alarme de surveillance déclenchée"
+    ],
+    "actions": [
+      "Vérifier le thermocouple zone S23",
+      "Contrôler le régulateur PID associé",
+      "Réduire légèrement la consigne si nécessaire",
+      "Surveiller l'évolution de l'écart"
+    ],
+    "preventives": [
+      "Étalonnage trimestriel du thermocouple zone S23",
+      "Vérification mensuelle des paramètres PID",
+      "Suivi hebdomadaire des profils thermiques"
+    ]
+  },
+  "Ecart max. de Tempér. Zone: S24": {
+    "description": "Ecart max. de Tempér. Zone: S24",
+    "type": "Temperature Failure",
+    "urgence": "Low",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Température zone S24 supérieure à la consigne max",
+      "Ecart positif détecté",
+      "Alarme de surveillance déclenchée"
+    ],
+    "actions": [
+      "Vérifier le thermocouple zone S24",
+      "Contrôler le régulateur PID associé",
+      "Réduire légèrement la consigne si nécessaire",
+      "Surveiller l'évolution de l'écart"
+    ],
+    "preventives": [
+      "Étalonnage trimestriel du thermocouple zone S24",
+      "Vérification mensuelle des paramètres PID",
+      "Suivi hebdomadaire des profils thermiques"
+    ]
+  },
+  "Ecart max. de Tempér. Zone: S25": {
+    "description": "Ecart max. de Tempér. Zone: S25",
+    "type": "Temperature Failure",
+    "urgence": "Low",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Température zone S25 supérieure à la consigne max",
+      "Ecart positif détecté",
+      "Alarme de surveillance déclenchée"
+    ],
+    "actions": [
+      "Vérifier le thermocouple zone S25",
+      "Contrôler le régulateur PID associé",
+      "Réduire légèrement la consigne si nécessaire",
+      "Surveiller l'évolution de l'écart"
+    ],
+    "preventives": [
+      "Étalonnage trimestriel du thermocouple zone S25",
+      "Vérification mensuelle des paramètres PID",
+      "Suivi hebdomadaire des profils thermiques"
+    ]
+  },
+  "Ecart min. de Tempér. Zone: K2": {
+    "description": "Ecart min. de Tempér. Zone: K2",
+    "type": "Temperature Failure",
+    "urgence": "Low",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Température zone K2 inférieure à la consigne min",
+      "Ecart négatif détecté",
+      "Alarme de surveillance déclenchée"
+    ],
+    "actions": [
+      "Vérifier le thermocouple zone K2",
+      "Contrôler les brûleurs de la zone",
+      "Augmenter légèrement la consigne",
+      "Surveiller l'évolution de l'écart"
+    ],
+    "preventives": [
+      "Étalonnage trimestriel du thermocouple zone K2",
+      "Vérification mensuelle des brûleurs",
+      "Suivi hebdomadaire des profils thermiques"
+    ]
+  },
+  "Ecart min. de Tempér. Zone: K29": {
+    "description": "Ecart min. de Tempér. Zone: K29",
+    "type": "Temperature Failure",
+    "urgence": "Low",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Température zone K29 inférieure à la consigne min",
+      "Ecart négatif détecté",
+      "Alarme de surveillance déclenchée"
+    ],
+    "actions": [
+      "Vérifier le thermocouple zone K29",
+      "Contrôler les brûleurs de la zone",
+      "Augmenter légèrement la consigne",
+      "Surveiller l'évolution de l'écart"
+    ],
+    "preventives": [
+      "Étalonnage trimestriel du thermocouple zone K29",
+      "Vérification mensuelle des brûleurs",
+      "Suivi hebdomadaire des profils thermiques"
+    ]
+  },
+  "Ecart min. de Tempér. Zone: K30": {
+    "description": "Ecart min. de Tempér. Zone: K30",
+    "type": "Temperature Failure",
+    "urgence": "Low",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Température zone K30 inférieure à la consigne min",
+      "Ecart négatif détecté",
+      "Alarme de surveillance déclenchée"
+    ],
+    "actions": [
+      "Vérifier le thermocouple zone K30",
+      "Contrôler les brûleurs de la zone",
+      "Augmenter légèrement la consigne",
+      "Surveiller l'évolution de l'écart"
+    ],
+    "preventives": [
+      "Étalonnage trimestriel du thermocouple zone K30",
+      "Vérification mensuelle des brûleurs",
+      "Suivi hebdomadaire des profils thermiques"
+    ]
+  },
+  "Ecart min. de Tempér. Zone: K4": {
+    "description": "Ecart min. de Tempér. Zone: K4",
+    "type": "Temperature Failure",
+    "urgence": "Low",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Température zone K4 inférieure à la consigne min",
+      "Ecart négatif détecté",
+      "Alarme de surveillance déclenchée"
+    ],
+    "actions": [
+      "Vérifier le thermocouple zone K4",
+      "Contrôler les brûleurs de la zone",
+      "Augmenter légèrement la consigne",
+      "Surveiller l'évolution de l'écart"
+    ],
+    "preventives": [
+      "Étalonnage trimestriel du thermocouple zone K4",
+      "Vérification mensuelle des brûleurs",
+      "Suivi hebdomadaire des profils thermiques"
+    ]
+  },
+  "Ecart min. de Tempér. Zone: S17": {
+    "description": "Ecart min. de Tempér. Zone: S17",
+    "type": "Temperature Failure",
+    "urgence": "Low",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Température zone S17 inférieure à la consigne min",
+      "Ecart négatif détecté",
+      "Alarme de surveillance déclenchée"
+    ],
+    "actions": [
+      "Vérifier le thermocouple zone S17",
+      "Contrôler les brûleurs de la zone",
+      "Augmenter légèrement la consigne",
+      "Surveiller l'évolution de l'écart"
+    ],
+    "preventives": [
+      "Étalonnage trimestriel du thermocouple zone S17",
+      "Vérification mensuelle des brûleurs",
+      "Suivi hebdomadaire des profils thermiques"
+    ]
+  },
+  "Ecart min. de Tempér. Zone: S18": {
+    "description": "Ecart min. de Tempér. Zone: S18",
+    "type": "Temperature Failure",
+    "urgence": "Low",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Température zone S18 inférieure à la consigne min",
+      "Ecart négatif détecté",
+      "Alarme de surveillance déclenchée"
+    ],
+    "actions": [
+      "Vérifier le thermocouple zone S18",
+      "Contrôler les brûleurs de la zone",
+      "Augmenter légèrement la consigne",
+      "Surveiller l'évolution de l'écart"
+    ],
+    "preventives": [
+      "Étalonnage trimestriel du thermocouple zone S18",
+      "Vérification mensuelle des brûleurs",
+      "Suivi hebdomadaire des profils thermiques"
+    ]
+  },
+  "Ecart min. de Tempér. Zone: S20": {
+    "description": "Ecart min. de Tempér. Zone: S20",
+    "type": "Temperature Failure",
+    "urgence": "Low",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Température zone S20 inférieure à la consigne min",
+      "Ecart négatif détecté",
+      "Alarme de surveillance déclenchée"
+    ],
+    "actions": [
+      "Vérifier le thermocouple zone S20",
+      "Contrôler les brûleurs de la zone",
+      "Augmenter légèrement la consigne",
+      "Surveiller l'évolution de l'écart"
+    ],
+    "preventives": [
+      "Étalonnage trimestriel du thermocouple zone S20",
+      "Vérification mensuelle des brûleurs",
+      "Suivi hebdomadaire des profils thermiques"
+    ]
+  },
+  "Ecart min. de Tempér. Zone: S22": {
+    "description": "Ecart min. de Tempér. Zone: S22",
+    "type": "Temperature Failure",
+    "urgence": "Low",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Température zone S22 inférieure à la consigne min",
+      "Ecart négatif détecté",
+      "Alarme de surveillance déclenchée"
+    ],
+    "actions": [
+      "Vérifier le thermocouple zone S22",
+      "Contrôler les brûleurs de la zone",
+      "Augmenter légèrement la consigne",
+      "Surveiller l'évolution de l'écart"
+    ],
+    "preventives": [
+      "Étalonnage trimestriel du thermocouple zone S22",
+      "Vérification mensuelle des brûleurs",
+      "Suivi hebdomadaire des profils thermiques"
+    ]
+  },
+  "Ecart min. de Tempér. Zone: S23": {
+    "description": "Ecart min. de Tempér. Zone: S23",
+    "type": "Temperature Failure",
+    "urgence": "Low",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Température zone S23 inférieure à la consigne min",
+      "Ecart négatif détecté",
+      "Alarme de surveillance déclenchée"
+    ],
+    "actions": [
+      "Vérifier le thermocouple zone S23",
+      "Contrôler les brûleurs de la zone",
+      "Augmenter légèrement la consigne",
+      "Surveiller l'évolution de l'écart"
+    ],
+    "preventives": [
+      "Étalonnage trimestriel du thermocouple zone S23",
+      "Vérification mensuelle des brûleurs",
+      "Suivi hebdomadaire des profils thermiques"
+    ]
+  },
+  "Ecart min. de Tempér. Zone: S26": {
+    "description": "Ecart min. de Tempér. Zone: S26",
+    "type": "Temperature Failure",
+    "urgence": "Low",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Température zone S26 inférieure à la consigne min",
+      "Ecart négatif détecté",
+      "Alarme de surveillance déclenchée"
+    ],
+    "actions": [
+      "Vérifier le thermocouple zone S26",
+      "Contrôler les brûleurs de la zone",
+      "Augmenter légèrement la consigne",
+      "Surveiller l'évolution de l'écart"
+    ],
+    "preventives": [
+      "Étalonnage trimestriel du thermocouple zone S26",
+      "Vérification mensuelle des brûleurs",
+      "Suivi hebdomadaire des profils thermiques"
+    ]
+  },
+  "Gradient positif: P-RR": {
+    "description": "Gradient positif: P-RR",
+    "type": "Temperature Failure",
+    "urgence": "Medium",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Gradient de montée trop rapide zone P-RR",
+      "Risque de choc thermique",
+      "Alarme gradient active"
+    ],
+    "actions": [
+      "Réduire la puissance de chauffe zone P-RR",
+      "Ajuster la rampe de montée en température",
+      "Surveiller la qualité produit",
+      "Contrôler les capteurs de la zone"
+    ],
+    "preventives": [
+      "Vérification mensuelle des profils thermiques",
+      "Étalonnage trimestriel des capteurs P-RR",
+      "Suivi hebdomadaire"
+    ]
+  },
+  "Gradient négatif: P-RR": {
+    "description": "Gradient négatif: P-RR",
+    "type": "Temperature Failure",
+    "urgence": "Medium",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Chute de température trop rapide zone P-RR",
+      "Risque de sous-cuisson",
+      "Alarme gradient négatif active"
+    ],
+    "actions": [
+      "Vérifier les éléments chauffants zone P-RR",
+      "Contrôler l'isolation thermique",
+      "Augmenter la consigne",
+      "Surveiller l'évolution"
+    ],
+    "preventives": [
+      "Vérification mensuelle des éléments chauffants",
+      "Inspection trimestrielle de l'isolation",
+      "Suivi hebdomadaire des profils"
+    ]
+  },
+  "Ecart maximum: BY_VSC": {
+    "description": "Ecart maximum: BY_VSC",
+    "type": "Temperature Failure",
+    "urgence": "Low",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Température LBV supérieure à la consigne max",
+      "Ecart positif détecté",
+      "Alarme surveillance active"
+    ],
+    "actions": [
+      "Vérifier le capteur LBV",
+      "Contrôler le régulateur associé",
+      "Réduire la consigne si nécessaire",
+      "Surveiller l'évolution de l'écart"
+    ],
+    "preventives": [
+      "Étalonnage trimestriel du capteur LBV",
+      "Vérification mensuelle du régulateur",
+      "Suivi hebdomadaire des températures"
+    ]
+  },
+  "Ecart maximum: M1-PF": {
+    "description": "Ecart maximum: M1-PF",
+    "type": "Temperature Failure",
+    "urgence": "Low",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Température M1-PF supérieure à la consigne max",
+      "Ecart positif détecté",
+      "Alarme de surveillance active"
+    ],
+    "actions": [
+      "Vérifier le capteur de température M1-PF",
+      "Contrôler le régulateur associé",
+      "Réduire la consigne si nécessaire",
+      "Surveiller l'évolution"
+    ],
+    "preventives": [
+      "Étalonnage trimestriel du capteur M1-PF",
+      "Vérification mensuelle du régulateur",
+      "Suivi hebdomadaire"
+    ]
+  },
+  "Ecart maximum: P-RR": {
+    "description": "Ecart maximum: P-RR",
+    "type": "Temperature Failure",
+    "urgence": "Low",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Température P-RR supérieure à la consigne max",
+      "Ecart positif détecté",
+      "Alarme de surveillance active"
+    ],
+    "actions": [
+      "Vérifier le capteur de température P-RR",
+      "Contrôler le régulateur associé",
+      "Réduire la consigne si nécessaire",
+      "Surveiller l'évolution"
+    ],
+    "preventives": [
+      "Étalonnage trimestriel du capteur P-RR",
+      "Vérification mensuelle du régulateur",
+      "Suivi hebdomadaire"
+    ]
+  },
+  "Ecart maximum: P-WALL": {
+    "description": "Ecart maximum: P-WALL",
+    "type": "Temperature Failure",
+    "urgence": "Low",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Température P-WALL supérieure à la consigne max",
+      "Ecart positif détecté",
+      "Alarme de surveillance active"
+    ],
+    "actions": [
+      "Vérifier le capteur de température P-WALL",
+      "Contrôler le régulateur associé",
+      "Réduire la consigne si nécessaire",
+      "Surveiller l'évolution"
+    ],
+    "preventives": [
+      "Étalonnage trimestriel du capteur P-WALL",
+      "Vérification mensuelle du régulateur",
+      "Suivi hebdomadaire"
+    ]
+  },
+  "Ecart maximum: V-RCC": {
+    "description": "Ecart maximum: V-RCC",
+    "type": "Temperature Failure",
+    "urgence": "Low",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Température V-RCC supérieure à la consigne max",
+      "Ecart positif détecté",
+      "Alarme de surveillance active"
+    ],
+    "actions": [
+      "Vérifier le capteur de température V-RCC",
+      "Contrôler le régulateur associé",
+      "Réduire la consigne si nécessaire",
+      "Surveiller l'évolution"
+    ],
+    "preventives": [
+      "Étalonnage trimestriel du capteur V-RCC",
+      "Vérification mensuelle du régulateur",
+      "Suivi hebdomadaire"
+    ]
+  },
+  "Ecart minimum: HBV": {
+    "description": "Ecart minimum: HBV",
+    "type": "Temperature Failure",
+    "urgence": "Low",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Température HBV inférieure à la consigne min",
+      "Ecart négatif détecté",
+      "Alarme de surveillance active"
+    ],
+    "actions": [
+      "Vérifier le capteur de température HBV",
+      "Contrôler le régulateur et les éléments chauffants",
+      "Augmenter la consigne si nécessaire",
+      "Surveiller l'évolution"
+    ],
+    "preventives": [
+      "Étalonnage trimestriel du capteur HBV",
+      "Vérification mensuelle du régulateur",
+      "Suivi hebdomadaire"
+    ]
+  },
+  "Ecart minimum: M1-PF": {
+    "description": "Ecart minimum: M1-PF",
+    "type": "Temperature Failure",
+    "urgence": "Low",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Température M1-PF inférieure à la consigne min",
+      "Ecart négatif détecté",
+      "Alarme de surveillance active"
+    ],
+    "actions": [
+      "Vérifier le capteur de température M1-PF",
+      "Contrôler le régulateur et les éléments chauffants",
+      "Augmenter la consigne si nécessaire",
+      "Surveiller l'évolution"
+    ],
+    "preventives": [
+      "Étalonnage trimestriel du capteur M1-PF",
+      "Vérification mensuelle du régulateur",
+      "Suivi hebdomadaire"
+    ]
+  },
+  "Ecart minimum: P-RR": {
+    "description": "Ecart minimum: P-RR",
+    "type": "Temperature Failure",
+    "urgence": "Low",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Température P-RR inférieure à la consigne min",
+      "Ecart négatif détecté",
+      "Alarme de surveillance active"
+    ],
+    "actions": [
+      "Vérifier le capteur de température P-RR",
+      "Contrôler le régulateur et les éléments chauffants",
+      "Augmenter la consigne si nécessaire",
+      "Surveiller l'évolution"
+    ],
+    "preventives": [
+      "Étalonnage trimestriel du capteur P-RR",
+      "Vérification mensuelle du régulateur",
+      "Suivi hebdomadaire"
+    ]
+  },
+  "Communication PLC": {
+    "description": "Communication PLC",
+    "type": "Alimentation Failure",
+    "urgence": "Medium",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Perte de communication avec le PLC",
+      "Alarme de communication active",
+      "Surveillance réduite du système"
+    ],
+    "actions": [
+      "Vérifier le câble réseau entre PC et PLC",
+      "Contrôler le switch réseau",
+      "Redémarrer le service de communication",
+      "Vérifier les paramètres IP et protocole"
+    ],
+    "preventives": [
+      "Test mensuel de la communication",
+      "Vérification trimestrielle des câbles réseau",
+      "Sauvegarde régulière de la configuration réseau"
+    ]
+  },
+  "Groupe Continuité non OK": {
+    "description": "Groupe Continuité non OK",
+    "type": "Alimentation Failure",
+    "urgence": "Medium",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Onduleur (UPS) en défaut",
+      "Risque de coupure alimentation en cas de panne secteur",
+      "Alarme groupe de continuité active"
+    ],
+    "actions": [
+      "Vérifier l'état de l'onduleur",
+      "Contrôler la batterie et sa charge",
+      "Tester le basculement sur batterie",
+      "Remplacer la batterie si nécessaire"
+    ],
+    "preventives": [
+      "Test mensuel du basculement sur batterie",
+      "Vérification trimestrielle de la charge",
+      "Remplacement préventif des batteries tous les 3 ans"
+    ]
+  },
+  "Groupe Electrogène non OK": {
+    "description": "Groupe Electrogène non OK",
+    "type": "Alimentation Failure",
+    "urgence": "Medium",
+    "category": "Non-Bloquante",
+    "symptomes": [
+      "Groupe électrogène en défaut",
+      "Alimentation de secours non disponible",
+      "Alarme groupe électrogène active"
+    ],
+    "actions": [
+      "Vérifier le niveau de carburant",
+      "Contrôler l'état du moteur et de l'alternateur",
+      "Tester le démarrage automatique",
+      "Contacter le service maintenance groupe électrogène"
+    ],
+    "preventives": [
+      "Test mensuel du démarrage automatique",
+      "Vérification trimestrielle des niveaux",
+      "Entretien annuel complet du groupe électrogène"
+    ]
+  }
+}
