@@ -1,0 +1,2 @@
+timestamp,prediction,probability,failure_type_pred,window_start,mail_sent
+2026-05-15 11:47:28.214330,0,0.0006540087633766234,No_Failure,2026-05-14 00:00:00,False
